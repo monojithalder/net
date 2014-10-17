@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+xmlhttp2 = new XMLHttpRequest();
+function loading()
+{
+	//alert('asdsa');
+	//var obj=document.getElementById('im');
+	//obj.style.visibility='visible';
+	var obj1=document.getElementById('show1');
+	//var serverpage='http://www.adonisprojects.com/ajaxload.php';
+	var serverpage='ajaxload.php';
+	xmlhttp2.open('GET',serverpage,true);
+	xmlhttp2.onreadystatechange = function() {
+			if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
+				
+				//alert('ss');
+				
+				obj1.innerHTML=xmlhttp2.responseText;
+				
+			}
+			else
+			{
+				//var a="";
+				//document.getElementById( 'foo' ).innerHTML = " <img  src=ajax-loader.gif width=107 height=26 /> " ;
+			}
+			//obj.style.visibility='hidden';
+		}
+		xmlhttp2.send(null);
+		
+}
+</script>
+</head>
+
+<body>
+<div id="show1" style="border:1px solid black; width:300px; height:200px; overflow:auto;">
+
+</div>
+<div id="foo">
+<!--<img src="ajax-loader.gif" id="im" style="visibility:hidden"  />  !--->
+<input type="button" value="load" onclick="loading()"   />
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="js.js"></script>
+<script type="text/javascript" >
+$(document).ready(function() {    
+$('#photoimg').live('change', function(){
+	//$("#imageform").prop("target","#preview");
+	//alert("dsad");
+	$("#imageform").submit();
+	});
+
+}); 
+</script>
+</head>
+
+<body>
+<form id="imageform" method="post" enctype="multipart/form-data" action='uploadpic.php' target="if">
+
+Upload image from your computer: <input type="file" name="photoimg" id="photoimg" /><br><br/>
+
+</form>
+
+<div id="preview" style="border:1px solid black"></div>
+<iframe name="if" ></iframe>
+</body>
+</html>

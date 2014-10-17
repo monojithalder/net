@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+xmlhttp= new XMLHttpRequest();
+function abc()
+{
+	var serverpage='jsontest.php';
+	var html="none";
+	var obj=document.getElementById('show');
+	xmlhttp.open('GET',serverpage,true);
+	xmlhttp.onreadystatechange = function() {
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				
+				var con=eval("(" + xmlhttp.responseText + ") ");
+				alert(xmlhttp.responseText);
+				//for(var i in res)
+				//{	
+					alert(con.roll);
+					//html = res['id'];
+					//alert(html);
+				//}
+			}
+		}
+		xmlhttp.send(null);
+}
+</script>
+</head>
+
+<body>
+<input type="button" id="btu" value="show" onclick="abc()"  />
+<div id="show"></div>
+</body>
+</html>

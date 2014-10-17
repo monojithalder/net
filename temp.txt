@@ -1,0 +1,28 @@
+<div id="info">
+		<div style="border-color:#CFCECE; border-bottom-style:solid; border-bottom-width:thin; height:60px;">
+    		<div style="float:left; width:60px;">
+        		<img width="40px" height="40px" style="margin:10px 10px 10px 10px" src="all.gif"  />
+        	</div>
+        	<div style="float:left; width:180px; margin:0px 0px 0px 0px; vertical-align:top">
+        		<h4>Monojit Halder</h4>
+        	</div>
+    	</div>
+    	<div id="clear"></div>
+    	<div  id="navi" style="border-bottom-color:#CFCECE; border-bottom-style:solid; border-bottom-width:thin; height:60px;">
+    		<ul>
+        		<li><a href="#">HOME</a></li>
+            	<li><a href="#">PROFILE</a></li>
+            	<li><a href="#">ACCOUNT</a></li>
+        	</ul>
+    	</div>
+    	<div id="clear"></div>
+		<div style="margin-top:3px; padding-left:10px;">
+    		<div class="dis"><label>Live on  : Kolkata</label></div>
+        	<div class="dis"><label>Studies At : Brainware</label></div>
+        	<div class="dis"><label>Date Of Birth : 24/11/1990</label></div>
+        	<div class="dis"><label>Address : Anandapur</label></div>
+    	</div>
+	</div>
+	<div id="chatbox">
+
+	</div>

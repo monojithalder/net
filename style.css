@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* CSS Document */
+#container
+{
+	z-index:-1;
+	width:1366px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+#top
+{
+	z-index:-1;
+	width:1366px;
+	height:50px;
+	background-color:#0066CC;
+	padding-top:10px;
+}
+
+#midile
+{
+	z-index:-1;
+	widows:1366;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:30px;
+}
+#last
+{
+	z-index:-1;
+	width:1366px;
+	height:auto;
+}
+#error
+{
+	z-index:-1;
+	height:auto;
+	width:500px;
+	float:right;
+}
+#m1
+{
+	z-index:-1;
+	height:auto;
+	width:500px;
+	float:left;
+}
+#m2
+{
+	z-index:-1;
+	height:auto;
+	width:866px;
+	float:left;
+}
+.bak
+{
+	background-image:url(bak.jpg);
+	width:70px;
+	height:30px;
+	font-size:16px;
+	font-family:"Times New Roman", Times, serif;
+}
+.baklable
+{
+	height:70px;
+	font-family:"Times New Roman", Times, serif;
+	font-size:20px;
+	color:#FFFFFF;
+}
+.baltext
+{	
+	height:20px;
+	width:170px;
+}
+.text
+{	width:200px;
+	height:22px;
+	border:groove;
+}
+.red
+{
+	color:#FF0000;
+}
+.green
+{
+	color:#009900;
+}
+/*css for myaccount.php*/
+#search
+{
+	z-index:-1;
+	width:300px;
+	height:auto;
+	padding-left:400px;
+	float:left;
+}
+#autocomp
+{
+	z-index:10;
+	width:200px;
+	position:relative;
+	height:auto;
+	top:0px;
+	left:0px;
+	background-color:#FFFFFF;
+	border:thin solid #000000;
+	visibility:hidden;
+	position:relative;
+	border-collapse:collapse;
+	overflow:hidden;
+}
+.txts
+{
+	margin-top:6px;
+	width:200px;
+	height:22px;
+}
+#menu
+{
+	z-index:-1;
+	width:600px;
+	height:40px;
+	float:right;
+	
+	vertical-align:top;
+}
+#menu ul
+{
+	width:500px;
+	height:30px;
+	text-align:center;
+	vertical-align:text-top;
+	margin: 0;
+	padding: 0;
+}
+#menu ul li
+{
+	list-style-type:none;
+	display:inline-block;
+	vertical-align:top;
+	width:80px;
+}
+#menu ul li a
+{
+	text-decoration:none;
+	color:#CCCCCC;
+	width:80px;
+	padding-left:10px;
+	padding-right:10px;
+	font-size:23px;
+	text-align:center;
+}
+#menu ul li a:hover
+{
+	text-decoration:underline;
+	 background: rgba(255, 255, 255, 0.2);
+	 transition: all 0.2s ease-out;
+}
+#menu ul li.active a
+{
+	text-decoration:underline;
+	background: rgba(255, 255, 255, 0.2);
+	transition: all 0.2s ease-out;
+}
+#main
+{
+	z-index:-1;
+	width:1366px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:30px;
+	position:relative;
+}
+#side
+{
+	z-index:-1;
+	width:200px;
+	height:auto;
+	border:thin;
+	border-right-style:solid;
+	float:left;
+}
+#side2
+{
+	z-index:-1;
+	width:200px;
+	height:auto;
+	border:thin;
+	border-left-style:solid;
+	float:right;
+}
+#mid
+{
+	z-index:-1;
+	width:900px;
+	height:auto;
+	float:left;
+	margin-left:30px;
+	margin-right:auto;
+}
+#pic
+{
+	z-index:-1;
+	height:auto;
+	width:200px;
+	padding-left:43px;
+}
+#pic img
+{
+	height:75px;
+	widows:75px;
+	float:left;
+}
+#online
+{
+	z-index:-1;
+	width:200px;
+	height:auto;
+	padding-top:20px;
+	overflow:auto;
+}
+#sidermenu
+{
+	z-index:-1;
+	width:200px;
+	height:auto;
+	padding-top:20px;
+	float:left;
+}
+
+#sidermenu ul
+{
+	 width:200px;
+     height:150px;
+	 
+	 left:0px;
+}
+#sidermenu ul li
+{
+	   list-style-type:none;
+       padding-bottom:8px;
+       background:url("line.png") repeat-x Left bottom;
+       background-color:#498CE8;
+       float:left;
+       display:block;
+       width:130px;
+}
+#sidermenu ul li a
+{
+	background-color:#498CE8;
+       text-decoration:none;
+       font-size:20px; 
+       color:White;
+       display:block;
+       width:130px;
+}
+#sidermenu ul li a:hover
+{
+	background-color:Black;
+       color:White;
+}

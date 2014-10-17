@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+body
+{
+	margin:0;
+	padding:0;
+	background-color:#8DE0D8;
+}
+#container
+{	z-index:2;
+	margin:auto;
+	width:800px;
+	background: rgba(255, 255, 255, 0.3);
+	height:1000px;
+	
+}
+#nav
+{
+	background-color:#151833;
+	height:50px;
+	
+}
+#clear
+{
+	clear:both;
+}
+#sider
+{
+	width:200px;
+	background-color:#99FF66;
+	height:500px;
+	float:left;
+	
+
+}
+#midile
+{
+	width:400px;
+	background-color:#CC9966;
+	height:700px;
+	float:left;
+	
+}
+#last
+{
+	width:200px;
+	background-color:#6699CC;
+	height:500px;
+	float:left;
+	
+
+}
+#search
+{
+
+	width:300px;
+	height:auto;
+	padding-left:400px;
+}
+#autocomp
+{
+	z-index:1;
+	width:100px;
+	height:auto;
+	/*background-color:#FFFFFF;*/
+	background: none repeat scroll 0 0 #F5F5F5;
+	border:thin solid #000000;
+	position:relative;
+	overflow:visible;
+	
+}
+.try
+{
+ z-index:1;
+ position:relative;
+ width:200px;
+ height:200px;
+ background: none repeat scroll 0 0 #F5F5F5;
+ overflow:visible;
+ top:10px;
+ left:30px;
+ 
+}
+#cont
+{
+	position:relative;
+	top:0px;
+}
+</style>
+<script type="text/javascript">
+xmlhttp2 = new XMLHttpRequest();
+function searchdata(id)
+{
+	var obj=document.getElementById(id);
+	var obj1=document.getElementById('autocomp');
+	var serverpage='search.php?s='+obj.value;
+	xmlhttp2.open('GET',serverpage,true);
+	xmlhttp2.onreadystatechange = function() {
+			if (xmlhttp2.readyState == 4 && xmlhttp2.status == 200) {
+				
+				//alert(obj.value);
+				if(xmlhttp2.responseText != "none")
+				{
+					obj1.style.visibility='visible';
+					obj1.innerHTML=xmlhttp2.responseText;
+				}
+				else
+				{
+					obj1.innerHTML="";
+					obj1.style.visibility='hidden';
+				}
+			}
+		}
+		xmlhttp2.send(null);
+}
+</script>
+</head>
+
+<body>
+<div id="container">
+	<div id="nav">
+    	<div id="search">
+    	  <input type="text" name="txtsearch" id="txtsearch" class="txts" autocomplete="off" onkeyup="searchdata(this.id)"    />
+    	  <div id="autocomp"></div>
+                
+       </div>
+       
+    <!--   <div class="try"></div> -->
+  </div>
+  	<!-- <div id="cont"> -->
+    	<div id="sider"></div>
+    	<div id="midile"></div>
+    	<div id="last"></div>
+  <!--		 </div> -->
+</div>
+</body>
+</html>
